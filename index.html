@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сбор информации по проекту</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Информация по проекту</h1>
+    <p>Заполните форму, чтобы отправить данные по проекту</p>
+
+    <form id="projectForm">
+        <label>
+            Название проекта
+            <input type="text" name="project" required>
+        </label>
+
+        <label>
+            Ответственный
+            <input type="text" name="owner" required>
+        </label>
+
+        <label>
+            Описание проекта
+            <textarea name="description" rows="4" required></textarea>
+        </label>
+
+        <label>
+            Сроки
+            <input type="date" name="deadline">
+        </label>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+    <p id="status"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
